@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo/electric-large.jpg"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <title>Kids | Electrix</title>
+</head>
+<style>
+.dropbtn {
+    background-color: #FEFEFE;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #FEFEFE;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+   margin-left: 85%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+
+.store{
+  color: white;
+}
+.newsletter{
+  color: white;
+
+}
+p {
+color: white;
+
+}
+.footer{
+  background-color: black;
+
+}
+.info{
+  display: flex;
+  justify-content: space-around;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  background-color: black;
+
+}
+.items{
+
+  display: flex;
+  justify-content: space-around;
+}
+
+body,h1,h2,h3,h4,h5,h6, {font-family: "Montserrat", sans-serif;}
+
+.first-name{
+  text-align: center;
+}
+.second-name{
+  text-align: center;
+}
+
+.third-name{
+text-align: center;  
+}
+
+.title {
+  text-align: center;
+  font-size: 46px;
+  background-color: #FEFEFE;
+  width: 45%;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.tabs {
+font-size: 200px;
+}
+
+body {
+      padding: 0px;
+      margin: 0 auto;
+      background-color: #ebebeb;
+      height: 100%;
+    }
+    
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-bottom: 1.2px solid #ccc;
+    background-color: #FEFEFE;
+    text-align: center;
+   
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+    text-align: center;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+    text-align: center;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    text-align: center;
+}
+    .header {
+    background-color: #FEFEFE;
+    width: 100%;
+    }
+
+    .space{
+      display: flex;
+      padding: 3px;
+      width: 100%
+    }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.topnav {
+  /*overflow: hidden;*/
+  float: right;
+  /*margin-top: -18px*/
+  position: absolute;
+  right: 0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+
+</style>
+<body>
+
+  
+<div class="header" id="myHeader">
+
+  <div class="space">
+
+    <h1 class="title"> <a href="electrix-home.php"><font color="black" face="Georgia">Electrix</font></a></h1>
+
+<div class="topnav">
+<a href="electrix-signin.php" class="sign" type="button">Sign in/ Sign up</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+  </div>
+<br>
+
+  <div class="tab">
+    <button class="tabs"><font face="Georgia">New Arrivals</font></button>
+    <a href="electrix-men.html"><button class="tabs"><font face="Georgia">Men</font></button></a>
+    <a href="electrix-women.html"><button class="tabs"><font face="Georgia">Women</font></button></a>
+    <button class="tabs"><font face="Georgia">Kids</font></button>
+    <button class="tabs"><font face="Georgia">Sale</font></button>
+  </div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+<div style="margin-top:83px"></div>
+
+<div style="margin-left:150px">
+  <div style="margin-right:150px">
+
+  
+ <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"><font color="black">SORT BY</font></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a>Most Popular</a>
+    <a>Price Low To High</a>
+    <a>Prie High To Low</a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+  
+  <!-- Top header -->
+
+
+<div  style="height: 280px;">
+
+<div class="items">
+<div style="width: 225px; height: 280px;" class="first">
+
+
+<a>
+<img src="img/wrhtksgkuy.jpg" width="225" height="225">
+</a>
+
+<div>
+<div class="first-name">
+<h4>
+<a>
+<font face="Georgia">
+KIDS POLO SHIRT</font><br> $35.99
+</a>
+
+</h4>
+</div>
+</div>
+</div>
+
+
+
+<div style="width: 225px; height: 280px;" class="second">
+
+<a>
+<img src="img/wrhtksgkuy.jpg" width="225" height="225">
+</a>
+
+
+<div class="second-name">
+<h4>
+<a>
+<font face="Georgia">
+KIDS POLO SHIRT</font><br> $35.99
+
+</a>
+</h4>
+</div>
+</div>
+
+<div style="width: 225px; height: 280px;" class="third">
+
+<a>
+<img src="img/wrhtksgkuy.jpg" width="225" height="225">
+</a>
+
+
+<div class="third-name">
+<h4>
+<a>
+<font face="Georgia">
+KIDS POLO SHIRT</font><br> $35.99
+
+</a>
+</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div style="margin-left:150px">
+  <div style="margin-right:150px">
+
+  
+  <div style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+
+
+<div  style="height: 280px;">
+
+<div class="items">
+<div style="width: 225px; height: 280px;" class="first">
+
+
+<a>
+<img src="img/wrhtksgkuy.jpg" width="225" height="225">
+</a>
+
+<div>
+<div class="first-name">
+<h4>
+<a>
+<font face="Georgia">
+KIDS POLO SHIRT</font><br> $35.99
+</a>
+
+</h4>
+</div>
+</div>
+</div>
+
+
+
+<div style="width: 225px; height: 280px;" class="second">
+
+<a>
+<img src="img/wrhtksgkuy.jpg" width="225" height="225">
+</a>
+
+
+<div class="second-name">
+<h4>
+<a>
+<font face="Georgia">
+KIDS POLO SHIRT</font><br> $35.99
+
+</a>
+</h4>
+</div>
+</div>
+
+<div style="width: 225px; height: 280px;" class="third">
+
+<a>
+<img src="img/wrhtksgkuy.jpg" width="225" height="225">
+</a>
+
+
+<div class="third-name">
+<h4>
+<a>
+<font face="Georgia">
+KIDS POLO SHIRT</font><br> $35.99
+
+</a>
+</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<span>
+<br>
+<br>
+<br>
+  <br>
+
+<!-- <span> -->
+  <!-- Subscribe section -->
+    
+  
+  <!-- Footer -->
+  
+       
+    <div class="info">
+      <div class="left">
+        <p>About us</p>
+        <p>customer Service</p>
+        <p>Support</p>
+      </div>
+
+      <div class="center">
+        <p>Order Status</p>
+        <p>Shipment</p>
+        <p>Return</p>
+        <p>Help</p>
+      </div>
+
+      <div class="right">
+        <h4 class="store">Store</h4>
+        <p>Company Name</p>
+        <p> ex@mail.com</p>
+        
+        <br>
+     </div>
+    </div>
+
+
+
+<!-- Newsletter Modal -->
+<div class="footer" id="newsletter">
+  <div style="padding:32px">
+    <div>
+    
+      <h2 class="newsletter">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p></p>
+      <button type="button" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+<script>
+
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</footer>
+
+</body>
+</html>
